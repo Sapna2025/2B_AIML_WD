@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+    <script>
+        let firstName="Sapna";
+        let LastName="Saini";
+        document.write("My name is "+firstName+"<br>");
+        document.write("My Last name is "+LastName+"<br>");
+        document.write(`My first name is ${firstName}<br>`);
+        document.write(`My name is ${firstName} ${LastName}<br>`);
+
+        function fullName(first,last){
+            return `${first} ${last}`;
+        }
+        let name=`Hello ${fullName(firstName,LastName)}`;
+        document.write(name);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
