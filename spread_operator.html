@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+    <script>
+        function sum(...values){
+            let total=0;
+            for(let i of values){
+                total+=i;
+            }
+            document.write(total);
+        };
+        let arr=parseInt(prompt("Enter the number of elements in the array: "));
+        let arr1=[];
+        for(let i=0;i<arr;i++){
+            arr1[i]=parseInt(prompt("Enter the elements : "));
+        }
+        sum(...arr1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
