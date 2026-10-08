@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <script>
+        // class hello{
+        //     constructor(){
+        //         document.write("Hello Constructor<br>");
+        //     }
+        // }
+        // class hello1 extends hello{
+        //     constructor(){
+        //         document.write("Hii, Constructor<br>");
+        //     }
+        // }
+        // let h1=new hello1();
+        //  class hello{
+        //     constructor(){
+        //         document.write("Hello Constructor<br>");
+        //     }
+        // }
+        // class hello1 extends hello{
+        //     constructor(){
+        //         super();
+        //         document.write("Hii, Constructor<br>");
+        //     }
+        // }
+        // let h1=new hello1();
+         class hello{
+            info(){
+                document.write("Hello info<br>");
+            }
+        }
+        class hello1 extends hello{
+            info(){
+                super.info();
+                document.write("Hii, Constructor<br>");
+            }
+        }
+        let h1=new hello1();
+        h1.info();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
