@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+    <script>
+        //  let name="Sapna";
+        //  let roll_no=101;
+        //  let student={
+        //      name,
+        //      roll_no
+        //  }
+        //  document.write(student.name+"<br>");
+        //  document.write(student.roll_no+"<br><br>");
+
+        // let F="firstName"
+        // let L="lastName"
+        // let student1={
+        //     [F]:"Sapna",
+        //     [L]:"Saini"
+        // }
+        // document.write(student1.firstName+"<br>");
+        // document.write(student1.lastName+"<br>");
+        let F="firstName"
+        let L="lastName"
+        let data={
+            [F]:"Sapna",
+            [L]:"Saini",
+        
+            // show(){
+            //     document.write(this.firstName+"<br>");
+            //     document.write(this.lastName+"<br>");
+            // }
+            'detail show'(){
+                document.write(this.firstName+"<br>");
+                document.write(this.lastName+"<br>");
+            }
+        }
+        // data.show();
+        data['detail show']();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
