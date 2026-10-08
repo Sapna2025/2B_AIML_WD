@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <script>
+        class  Person{
+            static count=0;
+            constructor(id,name,age){
+                this.id=id;
+                this.name=name;
+                this.age=age;
+                Person.count++;
+            }
+            displayDetails(){
+                document.write(`ID: ${this.id}<br>`);
+                document.write(`Name: ${this.name}<br>`);
+                document.write(`Age: ${this.age}<br>`);
+            }
+        }
+        class Doctor extends Person{
+            constructor(id,name,age,specialization,consultationFee){
+                super(id,name,age);
+                this.specialization=specialization;
+                this.consultationFee=consultationFee;
+            }
+            displayDetails(){
+                super.displayDetails();
+                document.write(`Specialization: ${this.specialization} <br>`);
+                document.write(`ConsultationFee: ${this.consultationFee} <br><br>`);
+
+            }
+        }
+        class Patient extends Person{
+            constructor(id,name,age,disease,roomNo){
+                super(id,name,age);
+                this.disease=disease;
+                this.roomNo=roomNo;
+            }
+            displayDetails(){
+                super.displayDetails();
+                document.write(`Disease: ${this.disease}<br>`);
+                document.write(`RoomNo: ${this.roomNo} <br><br>`);
+            }
+        }
+        let doctor1=new Doctor(101,"Dr.Nirmala",49,"blablabla",500);
+        let doctor2=new Doctor(104,"Dr. rajendra",53,surgeon,1000);
+        let patient1=new Patient(1,"Mannu",17,"skin cancer",206);
+        let patient2=new Patient(3,"Shreya",23,"heart problem",301);
+
+        doctor1.displayDetails();
+        doctor2.displayDetails();
+        patient1.displayDetails();
+        patient2.displayDetails();
+
+        document.write("Total Persons: "+Person.count+"<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>//
