@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+    <script>
+        let data=["Sapna",101,201009,"Ghaziabad"]
+        let name=data[0];
+        let roll_no=data[1];
+        let pincode=data[2];
+        let city=data[3];
+
+        let[name1="Shivani",roll_no1=101,pincode1=201009,city1="Ghaziabad"]=data;
+        document.write(name1+"<br>");
+        document.write(roll_no1+"<br>");
+        document.write(pincode1+"<br>");
+        document.write(city1+"<br><br>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
